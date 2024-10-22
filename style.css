@@ -1,0 +1,52 @@
+
+*{
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+.board{
+    width: 80%;
+    /* padding-left:10% ; */
+    /* padding-right:10% ; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;       
+    gap: 10px;     
+    flex-wrap: wrap;
+}
+.board img{
+    width:380px;
+    height: auto;
+}
+h1{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.investors{
+    width: 80%;
+    padding-left:10% ;
+    padding-right:10% ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5em;
+}
+.investors div{
+    height: auto;
+    width: auto;
+    background-color: whitesmoke;
+    border-radius: 1em;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.investors img:nth-child(1){
+    margin-top: 1em;
+}
+.investors p{
+    color: gray;
+    font-size: 1.2em;
+}
+.investors h3{
+    font-size: 1.3em;
+}
