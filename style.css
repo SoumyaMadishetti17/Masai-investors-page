@@ -1,18 +1,17 @@
-
 *{
     margin: auto;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
 }
 .board{
     width: 80%;
-    /* padding-left:10% ; */
-    /* padding-right:10% ; */
     display: flex;
     justify-content: space-around;
     align-items: center;       
-    gap: 10px;     
+    gap: 1em;     
     flex-wrap: wrap;
+    margin: auto;
 }
 .board img{
     width:380px;
@@ -23,19 +22,16 @@ h1{
     margin-bottom: 1.5em;
 }
 .investors{
-    width: 80%;
-    padding-left:10% ;
-    padding-right:10% ;
+    width: 85vw;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-template-rows: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
 }
-.investors div{
-    height: auto;
-    width: auto;
+.investors div{    
+    max-width: 100%;
     background-color: whitesmoke;
     border-radius: 1em;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
